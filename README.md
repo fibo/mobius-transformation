@@ -33,4 +33,4 @@ npm install mobius-transformation
 
 [MIT](http://g14n.info/mit-license/)
 
-[mobius_wiki](https://en.wikipedia.org/wiki/M%C3%B6bius_transformation)
+[mobius_wiki]: https://en.wikipedia.org/wiki/M%C3%B6bius_transformation
