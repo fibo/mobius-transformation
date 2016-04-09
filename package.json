@@ -1,0 +1,42 @@
+{
+  "name": "mobius-transformation",
+  "version": "0.0.0",
+  "description": "implements beautiful geometric transformations that preserve angles and generalized circles",
+  "main": "index.js",
+  "scripts": {
+    "check-deps": "npm outdated",
+    "lint": "standard",
+    "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
+    "test": "tape test.js"
+  },
+  "pre-commit": [
+    "lint",
+    "test",
+    "check-deps"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibo/mobius-transformation.git"
+  },
+  "keywords": [
+    "mobius",
+    "geometry"
+  ],
+  "author": {
+    "name": "Gianluca Casati",
+    "url": "http://g14n.info"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fibo/mobius-transformation/issues"
+  },
+  "homepage": "http://npm.im/mobius-transformation",
+  "dependencies": {
+    "algebra": "^0.9.0"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.1.2",
+    "standard": "^6.0.8",
+    "tape": "^4.5.1"
+  }
+}
