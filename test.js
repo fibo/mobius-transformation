@@ -1,11 +1,22 @@
-var test = require('tape')
-var mobius = require('./index')
+/* eslint-disable indent */
 
-test('it', function (t) {
+const algebra = require('algebra')
+const test = require('tape')
+const mobius = require('mobius-transformation')
+
+const Complex = algebra.Complex
+
+test('example', (t) => {
   t.plan(1)
 
-  mobius()([1, 0,
-           [0, 1], 1])
+  const zero = new Complex([0, 0])
+  const one = new Complex([1, 0])
+  const half = new Complex([0.5, 0])
 
-  t.skip()
+  const inversion = new mobius.Transformation([zero, one,
+                                               one, zero])
+
+  const two = inversion(half)
+
+  t.deepEqual(two.data, [2, 0], '1/2 -> 2')
 })
