@@ -4,15 +4,14 @@
   "description": "implements beautiful geometric transformations that preserve angles and generalized circles",
   "main": "index.js",
   "scripts": {
-    "check-deps": "npm outdated",
+    "homepage": "echo \"---\ntitle: $npm_package_name\nflow: /empty.json\n---\" > docs/index.md; cat README.md >> docs/index.md",
     "lint": "standa",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
     "test": "NODE_PATH=. tape test.js"
   },
   "pre-commit": [
     "lint",
-    "test",
-    "check-deps"
+    "test"
   ],
   "repository": {
     "type": "git",
@@ -30,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/fibo/mobius-transformation/issues"
   },
-  "homepage": "http://npm.im/mobius-transformation",
+  "homepage": "http://g14n.info/mobius-transformation",
   "dependencies": {
     "algebra": "^0.12.1"
   },
