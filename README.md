@@ -32,7 +32,7 @@ npm install mobius-transformation
 
 Unit circle inversion.
 
-[!Inversion](http://g14n.info/mobius-transformation/unit-circle-inversion.svg)
+![Inversion][example_svg]
 
 ```javascript
 const algebra = require('algebra')
@@ -57,3 +57,4 @@ console.log(two) // Complex { data: [2, 0] }
 [MIT](http://g14n.info/mit-license/)
 
 [mobius_wiki]: https://en.wikipedia.org/wiki/M%C3%B6bius_transformation
+[example_svg]: http://g14n.info/mobius-transformation/unit-circle-inversion.svg
