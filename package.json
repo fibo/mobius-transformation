@@ -4,9 +4,11 @@
   "description": "implements beautiful geometric transformations that preserve angles and generalized circles",
   "main": "index.js",
   "scripts": {
+    "docs": "npm run homepage: npm run svgx",
     "homepage": "echo \"---\ntitle: $npm_package_name\nflow: /empty.json\n---\" > docs/index.md; cat README.md >> docs/index.md",
-    "lint": "standa",
+    "lint": "standard --fix",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
+    "svgx": "NODE_PATH=. babel-node svgx/unit-circle-inversion.js > docs/unit-circle-inversion.svg",
     "test": "NODE_PATH=. tape test.js"
   },
   "pre-commit": [
@@ -34,8 +36,13 @@
     "algebra": "^0.12.6"
   },
   "devDependencies": {
-    "standa": "^1.0.2",
+    "babel-cli": "^6.26.0",
+    "babel-env": "^2.4.1",
     "pre-commit": "^1.1.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "standard": "^11.0.1",
+    "svgx": "^1.1.0",
     "tape": "^4.5.1"
   }
 }

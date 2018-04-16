@@ -8,7 +8,7 @@ See [Möbius transformation on wikipedia][mobius_wiki].
 
 [Installation](#installation) |
 [API](#api) |
-[Examples](#examples) |
+[Example](#examples) |
 [License](#license)
 
 [![NPM version](https://badge.fury.io/js/mobius-transformation.svg)](http://badge.fury.io/js/mobius-transformation)
@@ -31,6 +31,8 @@ npm install mobius-transformation
 ## Examples
 
 Unit circle inversion.
+
+[!Inversion](http://g14n.info/mobius-transformation/unit-circle-inversion.svg)
 
 ```javascript
 const algebra = require('algebra')
