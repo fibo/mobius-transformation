@@ -1,6 +1,6 @@
 {
   "name": "mobius-transformation",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "implements beautiful geometric transformations that preserve angles and generalized circles",
   "main": "index.js",
   "scripts": {
