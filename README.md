@@ -43,7 +43,7 @@ const one = new Complex([1, 0])
 const half = new Complex([0.5, 0])
 
 const inversion = new mobius.Transformation([zero, one,
-                                              one, zero])
+                                             one,  zero])
 
 const two = inversion(half)
 

@@ -31,7 +31,7 @@
   },
   "homepage": "http://g14n.info/mobius-transformation",
   "dependencies": {
-    "algebra": "^0.12.1"
+    "algebra": "^0.12.6"
   },
   "devDependencies": {
     "standa": "^1.0.2",
